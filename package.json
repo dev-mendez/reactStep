@@ -31,9 +31,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "husky": "^4.2.5"
-  },
+  "devDependencies": {},
   "husky": {
     "hooks": {
       "pre-commit": "npm test",
