@@ -1,5 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import SayHi from "./app";
+import App from "./app";
 
-ReactDOM.render(<SayHi />, document.getElementById("root"));
+ReactDOM.render(
+  <App color="red" name="fruit" asd="asd" />,
+  document.getElementById("root")
+);
+

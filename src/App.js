@@ -1,13 +1,29 @@
 import React, { Component } from "react";
 
-class SayHi extends Component {
+class Car extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { brand: "Ford", model: "Mustang", color: "red", year: 1999 };
+  }
+  changeColor = () => {
+    if (this.state.color == "blue") {
+      this.setState({ color: "red" });
+    } else this.setState({ color: "blue" });
+  };
+
   render() {
     return (
-      <div className="App" id="div">
-        <h1>Vengo de App</h1>
+      <div>
+        <h1>
+          My Car is a <mark>{this.state.brand}</mark> brand, from year{" "}
+          <i>{this.state.year}</i>. The color is <code>{this.state.color}</code>
+        </h1>
+        <button type="button" onClick={this.changeColor} value="change">
+          Change
+        </button>
       </div>
     );
   }
 }
 
-export default SayHi;
+export default Car;
