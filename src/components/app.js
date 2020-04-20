@@ -1,0 +1,54 @@
+import React from "react";
+import logoReact from "../images/logo192.png";
+import logoAngular from "../images/angular.png";
+import logoNode from "../images/nodeJs.png";
+import usserLogo from "../images/self.png";
+import "../styles/Badge.css";
+
+class Badge extends React.Component {
+  render() {
+    return (
+      <div className="card-body card_body_plus">
+        <div className="logo_container">
+          <img className="tecnologies" src={logoAngular} alt="img" />
+          <img
+            className="tecnologies"
+            id="reactLogo"
+            src={logoReact}
+            alt="img"
+          />
+          <img className="tecnologies" src={logoNode} alt="img" />
+        </div>
+        <h3 id="rango">Full-Stack Engineer</h3>
+        <div className="info_container">
+          <div>
+            <img id="contact_logo" src={usserLogo} alt="img" />
+          </div>
+          <div>
+            <h1 id="name">
+              Armando <br /> Méndez
+            </h1>
+          </div>
+        </div>
+        <div className="contact_container">
+          <div>
+            <div id="proficiency">
+              <ul>
+                <li>Front-End Specialist</li>
+                <li>Back-End Specialist </li>
+                <li>Data base expert    </li>
+                <li>Unstopable developer</li>
+              </ul>
+            </div>
+            <h4 id="e-mail">An2m001@gmail.com</h4>
+          </div>
+          <div className="hashTag_container">
+            <p div="hash">#an2</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default Badge;

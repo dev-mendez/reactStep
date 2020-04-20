@@ -1,17 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./app";
-
-ReactDOM.render(
-  <App color="red" name="fruit" asd="asd" />,
-  document.getElementById("root")
-);
-
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./app";
-
-ReactDOM.render(
-  <App color="red" name="fruit" asd="asd" />,
-  document.getElementById("root")
-);
+import Badge from "./components/app";
+import "bootstrap/dist/css/bootstrap.css";
+import './global.css'
+ReactDOM.render(<Badge />, document.getElementById("root"));

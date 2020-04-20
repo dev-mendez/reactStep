@@ -1,0 +1,80 @@
+* {
+  margin: auto;
+}
+body {
+  margin-top: 50px !important;
+}
+#reactLogo {
+  width: 110px;
+}
+.card_body_plus {
+  padding: 0px !important;
+  min-width: 400px;
+  max-width: 500px;
+  min-height: 600px !important;
+  background-color: #da3838;
+  border-radius: 40px 10px 0px 0px;
+  width: 50%;
+}
+.logo_container {
+  border-radius: 40px 10px;
+  padding: 1em;
+  background-image: linear-gradient(
+    to top,
+    rgba(31, 76, 224, 0),
+    rgba(60, 70, 55, 0.918)
+  );
+}
+.tecnologies {
+  width: 100px;
+  margin: 10px;
+}
+.info_container {
+  background-color: rgba(56, 48, 48, 0.185);
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #202020;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#contact_logo {
+  margin: 10px;
+  width: 110px;
+  height: 120px;
+  border-radius: 100%;
+}
+#name {
+  margin-left: -2em;
+  color: antiquewhite;
+}
+h3#rango {
+  color: #ffb602;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+h4#e-mail {
+  position: relative;
+  color: #202020;
+  margin-top: 1em !important;
+}
+p#hash {
+  color: whitesmoke;
+}
+#proficiency {
+  display: flex;
+  float: left;
+  justify-content: center;
+}
+ul {
+  margin-left: 4em;
+}
+li {
+  list-style-type: square;
+  font-family: monospace;
+  font-size: xx-large;
+  color: whitesmoke;
+}
