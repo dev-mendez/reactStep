@@ -26,14 +26,14 @@ class Badge extends React.Component {
           </div>
           <div>
             <h1 id="name">
-              Armando <br /> Méndez
+              {this.props.firstName} <br /> {this.props.lastName}
             </h1>
           </div>
         </div>
         <div className="contact_container">
           <div>
             <div id="proficiency">
-              <ul>
+              <ul id="prof">
                 <li>Front-End Specialist</li>
                 <li>Back-End Specialist </li>
                 <li>Data base expert    </li>
