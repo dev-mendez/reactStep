@@ -3,47 +3,56 @@ import logoReact from "../images/logo192.png";
 import logoAngular from "../images/angular.png";
 import logoNode from "../images/nodeJs.png";
 import usserLogo from "../images/self.png";
-import "../styles/Badge.css";
+import "../styles/badge.css";
 
 class Badge extends React.Component {
   render() {
     return (
-      <div className="card-body card_body_plus">
-        <div className="logo_container">
-          <img className="tecnologies" src={logoAngular} alt="img" />
-          <img
-            className="tecnologies"
-            id="reactLogo"
-            src={logoReact}
-            alt="img"
-          />
-          <img className="tecnologies" src={logoNode} alt="img" />
-        </div>
-        <h3 id="rango">{this.props.jobTitle}</h3>
-        <div className="info_container">
-          <div>
-            <img id="contact_logo" src={usserLogo} alt="img" />
-          </div>
-          <div>
-            <h1 id="name">
-              {this.props.firstName} <br /> {this.props.lastName}
-            </h1>
-          </div>
-        </div>
-        <div className="contact_container">
-          <div>
-            <div id="proficiency">
-              <ul id="prof">
-                <li>Front-End Specialist</li>
-                <li>Back-End Specialist </li>
-                <li>Data base expert    </li>
-                <li>Unstopable developer</li>
-              </ul>
+      <div className="container card_container ">
+        <div className="card shadow">
+          <div className="card-header">
+            <div className="container usser_info">
+              <div>
+                <img id="usser_abatar" src={usserLogo} alt="img" />
+              </div>
+              <div id="name_container">
+                <h1 id="name">
+                  {this.props.firstName} <br /> {this.props.lastName}
+                </h1>
+              </div>
             </div>
-            <h4 id="e-mail">{this.props.email}</h4>
           </div>
-          <div className="hashTag_container">
-            <p id="hash">{this.props.hashTags}</p>
+          <div id="jobT">
+            <h2 id="jobTitle">{this.props.jobTitle}</h2>
+          </div>
+
+          <div id="logo_prof_container">
+            <img className="tecno_img" src={logoAngular} alt="img" />
+            <img className="tecno_img" src={logoReact} alt="img" />
+            <img className="tecno_img" src={logoNode} alt="img" />
+          </div>
+          <div className="contact_container">
+            <div>
+              <div id="proficiency">
+                <ul>
+                  <li id="prof_title">Proficiency</li>
+                  <ul id="prof">
+                    <li>Front-End Specialist</li>
+                    <li>Back-End Specialist </li>
+                    <li>Data base expert    </li>
+                    <li>Unstopable developer</li>
+                  </ul>
+                </ul>
+              </div>
+              <div className="justify-content-centered">
+                <h4 id="e-mail" className="align-self-center">
+                  <ins> {this.props.email}</ins>
+                </h4>
+              </div>
+            </div>
+            <div className="hashTag_container">
+              <p id="hash">{this.props.hashTags}</p>
+            </div>
           </div>
         </div>
       </div>

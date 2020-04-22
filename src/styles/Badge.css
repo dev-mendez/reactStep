@@ -1,80 +1,85 @@
-* {
-  margin: auto;
+.card_container {
+  position: relative;
+  margin-top: 2em;
+  margin-left: -6em !important;
 }
-body {
-  margin-top: 50px !important;
-}
-#reactLogo {
-  width: 110px;
-}
-.card_body_plus {
-  padding: 0px !important;
-  min-width: 400px;
-  max-width: 500px;
-  min-height: 600px !important;
-  background-color: #da3838;
-  border-radius: 40px 10px 0px 0px;
-  width: 50%;
-}
-.logo_container {
-  border-radius: 40px 10px;
-  padding: 1em;
-  background-image: linear-gradient(
-    to top,
-    rgba(31, 76, 224, 0),
-    rgba(60, 70, 55, 0.918)
-  );
-}
-.tecnologies {
+.tecno_img {
   width: 100px;
-  margin: 10px;
-}
-.info_container {
-  background-color: rgba(56, 48, 48, 0.185);
-  text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: #202020;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 
-#contact_logo {
-  margin: 10px;
-  width: 110px;
-  height: 120px;
-  border-radius: 100%;
+#usser_abatar {
+  width: 120px;
+  height: 140px;
+  margin-left: -1em;
+  border-radius: 10px;
+}
+
+.card {
+  background-color: rgba(170, 50, 50, 0.973) !important;
+  width: 400px;
+}
+#logo_prof_container {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 0px !important;
+}
+.card-header {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 0px !important;
+}
+.usser_info {
+  background-color: rgba(223, 223, 223, 0);
+  display: flex;
+}
+
+#jobT {
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  color: rgb(240, 201, 26);
+  background-color: #3d8633a2;
+}
+h2#jobTitle {
+  font-size: 2.5em;
+}
+
+#name_container {
+  display: flex;
+  align-items: center;
 }
 #name {
-  margin-left: -2em;
-  color: antiquewhite;
+  margin-left: 1em;
+  color: wheat;
+  font-family: Arial, Helvetica, sans-serif;
 }
-h3#rango {
-  color: #ffb602;
-  font-size: 55px;
-  margin-bottom: 10px;
-}
-h4#e-mail {
-  position: relative;
-  color: #202020;
-  margin-top: 1em !important;
-}
-p#hash {
-  color: whitesmoke;
-}
-#proficiency {
-  display: flex;
-  float: left;
+
+#prof_container {
+  padding: 0px;
+  margin: 0px;
   justify-content: center;
+  align-items: center;
 }
-#prof {
-  margin-left: 4em;
-}
-li {
-  list-style-type: square;
-  font-family: monospace;
+#prof_title {
+  margin-top: 0.5em;
+  list-style-type: none;
   font-size: xx-large;
-  color: whitesmoke;
+  color: rgb(245, 229, 159);
+}
+ul#prof {
+  list-style-type: square;
+  font-size: 1.3em;
+  color: rgb(245, 229, 159);
+}
+
+.justify-content-centered {
+  display: flex;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(240, 201, 26);
+  
+}
+#email_span{
+    
 }
