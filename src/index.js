@@ -1,17 +1,7 @@
-import React from "react";
 import ReactDOM from "react-dom";
-import App from "./app";
-
-ReactDOM.render(
-  <App color="red" name="fruit" asd="asd" />,
-  document.getElementById("root")
-);
-
+import App from "./components/app.js";
 import React from "react";
-import ReactDOM from "react-dom";
-import App from "./app";
+import "bootstrap/dist/css/bootstrap.css";
+import "./styles/global.css";
 
-ReactDOM.render(
-  <App color="red" name="fruit" asd="asd" />,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));
